@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Новости</title>
+  </head>
+  <body>
+    <h3><%= count %> последних новостей в категории <%= category %></h3>
+    <dl>
+      <% news.forEach(function(item) { %>
+      <dt><%= item.title %></dt>
+      <dd><%= item.description %></dd>
+      <% }) %>
+    </dl>
+  </body>
+</html>
